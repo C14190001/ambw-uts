@@ -24,7 +24,11 @@ class MyApp extends StatelessWidget {
                 //Popular Courses
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [Text("Popular Courses:")],
+                  children: const [
+                    Text("Popular Courses:",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20))
+                  ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -64,91 +68,146 @@ class MyApp extends StatelessWidget {
                 //Continue Learning
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [Text("Continue Learning:")],
+                  children: const [
+                    Text("Continue Learning:",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20))
+                  ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
-                      children: const [
-                        Text("A"),
-                        Text("Science"),
-                        Text("Chapter 4"),
-                        Text("27 Mins"),
-                      ],
+                    Container(
+                      padding: const EdgeInsets.all(5),
+                      color: Colors.lightGreen,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text("A"),
+                          const Text("Science",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                          const Text("Chapter 4"),
+                          Row(
+                            children: const [Text("X"), Text("27 Mins")],
+                          ),
+                        ],
+                      ),
                     ),
-                    Column(
-                      children: const [
-                        Text("B"),
-                        Text("Design"),
-                        Text("Chapter 5"),
-                        Text("30 Mins"),
-                      ],
+                    Container(
+                      padding: const EdgeInsets.all(5),
+                      color: Colors.lightGreen,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text("B"),
+                          const Text("Design",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                          const Text("Chapter 5"),
+                          Row(
+                            children: const [Text("X"), Text("30 Mins")],
+                          ),
+                        ],
+                      ),
                     ),
-                    Column(
-                      children: const [
-                        Text("C"),
-                        Text("Biology"),
-                        Text("Chapter 1"),
-                        Text("25 Mins"),
-                      ],
+                    Container(
+                      padding: const EdgeInsets.all(5),
+                      color: Colors.lightGreen,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text("C"),
+                          const Text("Biology",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                          const Text("Chapter 1"),
+                          Row(
+                            children: const [Text("X"), Text("25 Mins")],
+                          ),
+                        ],
+                      ),
                     ),
-                    Column(
-                      children: const [
-                        Text("E"),
-                        Text("Cooking"),
-                        Text("Chapter 3"),
-                        Text("18 Mins"),
-                      ],
-                    ),
+                    Container(
+                      padding: const EdgeInsets.all(5),
+                      color: Colors.lightGreen,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text("D"),
+                          const Text("Cooking",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                          const Text("Chapter 3"),
+                          Row(
+                            children: const [Text("X"), Text("18 Mins")],
+                          ),
+                        ],
+                      ),
+                    )
                   ],
                 ),
                 //Last Seen Courses:
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [Text("Last Seen Courses:")],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text("A"),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text("Basics of Designing"),
-                        Text("1 hour, 25 mins")
-                      ],
-                    ),
-                    const Text("Open")
+                  children: const [
+                    Text("Last Seen Courses:",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20))
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text("B"),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text("Human Respiratory System"),
-                        Text("4 hour, 10 mins")
-                      ],
-                    ),
-                    const Text("Open")
-                  ],
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  color: Colors.purpleAccent,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text("A"),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text("Basics of Designing",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                          Text("1 hour, 25 mins")
+                        ],
+                      ),
+                      const Text("Open")
+                    ],
+                  ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text("C"),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text("Integration & Differentiation"),
-                        Text("2 hour, 37 mins")
-                      ],
-                    ),
-                    const Text("Open")
-                  ],
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  color: Colors.purpleAccent,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text("B"),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text("Human Respiratory System",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                          Text("4 hour, 10 mins")
+                        ],
+                      ),
+                      const Text("Open")
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  color: Colors.purpleAccent,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text("C"),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text("Integration & Differentiation",
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                          Text("2 hour, 37 mins")
+                        ],
+                      ),
+                      const Text("Open")
+                    ],
+                  ),
                 ),
               ],
             ),

@@ -16,6 +16,23 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(title: const Text("Test 1 - C14190001")),
+          bottomNavigationBar: BottomNavigationBar(
+            currentIndex: 0,
+            items: const [
+              BottomNavigationBarItem(
+                icon: Icon(Icons.home),
+                label: "Home"
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.menu_book),
+                label: "Explore"
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.chat),
+                label: "Chat"
+              ),
+            ],
+          ),
           body: Container(
             padding: const EdgeInsets.all(30.0),
             child: Column(
@@ -35,31 +52,31 @@ class MyApp extends StatelessWidget {
                   children: [
                     Column(
                       children: const [
-                        Text("A"),
+                        Icon(Icons.calendar_today),
                         Text("Science"),
                       ],
                     ),
                     Column(
                       children: const [
-                        Text("B"),
+                        Icon(Icons.coffee),
                         Text("Cooking"),
                       ],
                     ),
                     Column(
                       children: const [
-                        Text("C"),
+                        Icon(Icons.calendar_month),
                         Text("Math"),
                       ],
                     ),
                     Column(
                       children: const [
-                        Text("D"),
+                        Icon(Icons.pets),
                         Text("Biology"),
                       ],
                     ),
                     Column(
                       children: const [
-                        Text("E"),
+                        Icon(Icons.edit),
                         Text("Design"),
                       ],
                     )
@@ -83,12 +100,12 @@ class MyApp extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text("A"),
+                          const Icon(Icons.calendar_today),
                           const Text("Science",
                               style: TextStyle(fontWeight: FontWeight.bold)),
                           const Text("Chapter 4"),
                           Row(
-                            children: const [Text("X"), Text("27 Mins")],
+                            children: const [Icon(Icons.access_time), Text("27 Mins")],
                           ),
                         ],
                       ),
@@ -99,12 +116,12 @@ class MyApp extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text("B"),
+                          const Icon(Icons.edit),
                           const Text("Design",
                               style: TextStyle(fontWeight: FontWeight.bold)),
                           const Text("Chapter 5"),
                           Row(
-                            children: const [Text("X"), Text("30 Mins")],
+                            children: const [Icon(Icons.access_time), Text("30 Mins")],
                           ),
                         ],
                       ),
@@ -115,12 +132,12 @@ class MyApp extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text("C"),
+                          const Icon(Icons.pets),
                           const Text("Biology",
                               style: TextStyle(fontWeight: FontWeight.bold)),
                           const Text("Chapter 1"),
                           Row(
-                            children: const [Text("X"), Text("25 Mins")],
+                            children: const [Icon(Icons.access_time), Text("25 Mins")],
                           ),
                         ],
                       ),
@@ -131,12 +148,12 @@ class MyApp extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text("D"),
+                          const Icon(Icons.fastfood),
                           const Text("Cooking",
                               style: TextStyle(fontWeight: FontWeight.bold)),
                           const Text("Chapter 3"),
                           Row(
-                            children: const [Text("X"), Text("18 Mins")],
+                            children: const [Icon(Icons.access_time), Text("18 Mins")],
                           ),
                         ],
                       ),
@@ -158,7 +175,7 @@ class MyApp extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text("A"),
+                      const Icon(Icons.book),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
@@ -167,7 +184,7 @@ class MyApp extends StatelessWidget {
                           Text("1 hour, 25 mins")
                         ],
                       ),
-                      const Text("Open")
+                      const Icon(Icons.play_circle)
                     ],
                   ),
                 ),
@@ -177,7 +194,7 @@ class MyApp extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text("B"),
+                      const Icon(Icons.collections_bookmark),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
@@ -186,7 +203,7 @@ class MyApp extends StatelessWidget {
                           Text("4 hour, 10 mins")
                         ],
                       ),
-                      const Text("Open")
+                      const Icon(Icons.play_circle)
                     ],
                   ),
                 ),
@@ -196,7 +213,7 @@ class MyApp extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text("C"),
+                      const Icon(Icons.library_books),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
@@ -205,7 +222,7 @@ class MyApp extends StatelessWidget {
                           Text("2 hour, 37 mins")
                         ],
                       ),
-                      const Text("Open")
+                      const Icon(Icons.play_circle)
                     ],
                   ),
                 ),
